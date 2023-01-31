@@ -4,11 +4,14 @@ using FluentValidation.Results;
 
 namespace Comunicacao.Messagem
 {
-    public class BaseAdapter : INotifierComponent
+    public class BaseStrategy : INotifierComponent
     {
         private readonly INotifierComponent _notifierComponent;
+        protected string CodPhone = ConfiguracaoAppSettings.GetValueKey("codPhone");
+        public string PhoneSmsAndMms = ConfiguracaoAppSettings.GetValueKey("phoneNumber_to_sms");
+        public string PhoneWhatsApp = ConfiguracaoAppSettings.GetValueKey("phoneNumber_to_whats");
 
-        public BaseAdapter(INotifierComponent notifierComponent)
+        public BaseStrategy (INotifierComponent notifierComponent)
         {
             _notifierComponent = notifierComponent;
         }

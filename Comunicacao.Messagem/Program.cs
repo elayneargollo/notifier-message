@@ -17,17 +17,21 @@ namespace Comunicacao.Messagem
 
             INotifierComponent envio = new Notifier();
 
-            INotifierComponent Mms = new MmsAdapter(envio);
-            Message msg = new Message(phoneNumber, message);
-            Mms.Send(msg);
+            // INotifierComponent Mms = new MmsStrategy(envio);
+            //Message msg = new Message(phoneNumber, message);
+            // Mms.Send(msg);
 
-            // INotifierComponent Sms = new SmsAdapter(envio);
+            // INotifierComponent Mms = new MmsStrategy(envio);
+            //Message msg = new Message(phoneNumber, message);
+            // Mms.Send(msg);
+
+            // INotifierComponent Sms = new SmsStrategy(envio);
             //Message msg = new Message(phoneNumber, message);
             // Sms.Send(msg);
 
-            // INotifierComponent zap = new WhatsappAdapter(envio);
-            //Message msg = new Message(phoneNumber, message);
-            // zap.Send(msg);
+            INotifierComponent zap = new WhatsappStrategy(envio);
+            Message msg = new Message(phoneNumber, message);
+            zap.Send(msg);
         }
     }
 }

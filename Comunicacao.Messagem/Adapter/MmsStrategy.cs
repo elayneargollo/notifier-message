@@ -1,0 +1,25 @@
+using System;
+using System.Linq;
+
+namespace Comunicacao.Messagem
+{
+    public class MmsStrategy  : BaseStrategy  
+    {
+        public MmsStrategy (INotifierComponent envioComponent) : base(envioComponent) { }
+
+        public override void Send(Message msg)
+        {
+            // Console.WriteLine("Report the uri:");
+            // string uri = Console.ReadLine();
+
+            msg.PhoneNumberDestiny = String.Concat(CodPhone, msg.PhoneNumberDestiny);
+            msg.PhoneOrigin = PhoneSmsAndMms;
+
+            msg.MediaUrl = new[] {
+                new System.Uri("https://c1.staticflickr.com/3/2899/14341091933_1e92e62d12_b.jpg")
+            }.ToList();
+
+            base.Send(msg);
+        }
+    }
+}
