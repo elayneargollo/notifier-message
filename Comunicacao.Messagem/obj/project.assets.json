@@ -2105,11 +2105,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elayne.argollo\\Documents\\twilio-sendSMS\\Comunicacao.Messagem\\Comunicacao.Messagem.csproj",
+      "projectUniqueName": "C:\\Users\\elayne.argollo\\Documents\\notifier-message\\Comunicacao.Messagem\\Comunicacao.Messagem.csproj",
       "projectName": "Comunicacao.Messagem",
-      "projectPath": "C:\\Users\\elayne.argollo\\Documents\\twilio-sendSMS\\Comunicacao.Messagem\\Comunicacao.Messagem.csproj",
+      "projectPath": "C:\\Users\\elayne.argollo\\Documents\\notifier-message\\Comunicacao.Messagem\\Comunicacao.Messagem.csproj",
       "packagesPath": "C:\\Users\\elayne.argollo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elayne.argollo\\Documents\\twilio-sendSMS\\Comunicacao.Messagem\\obj\\",
+      "outputPath": "C:\\Users\\elayne.argollo\\Documents\\notifier-message\\Comunicacao.Messagem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\elayne.argollo\\AppData\\Roaming\\NuGet\\NuGet.Config",

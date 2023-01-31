@@ -12,7 +12,7 @@ namespace Comunicacao.Messagem
         public override void Send(Message msg)
         {
             msg.PhoneNumberDestiny = String.Concat("whatsapp:", CodPhone, msg.PhoneNumberDestiny);
-            msg.PhoneOrigin = String.Concat("whatsapp:", _PhoneOrigin);
+            msg.PhoneOrigin = String.Concat("whatsapp:", msg.PhoneOrigin);
 
             base.Send(msg);
         }

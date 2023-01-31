@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UqVX/pfqTxi8Sc+T+qEaQSBYszHlLY+zoqtidCMbAymjPGIrgJBifbIq+cdNO51Qi2qxSEl+sM8wfAJ0KzlRBQ==",
+  "dgSpecHash": "sgOr4OcEc4zi0rqRsjER8goppvkR4TnElUouJ4ugZHIVSoU4LytFC4ewsksjGBSzPD+8EUoLYMCmEDh4TwGcKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elayne.argollo\\Documents\\twilio-sendSMS\\Comunicacao.Messagem\\Comunicacao.Messagem.csproj",
+  "projectFilePath": "C:\\Users\\elayne.argollo\\Documents\\notifier-message\\Comunicacao.Messagem\\Comunicacao.Messagem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elayne.argollo\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\elayne.argollo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
