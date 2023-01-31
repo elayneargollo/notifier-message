@@ -17,15 +17,15 @@ namespace Comunicacao.Messagem
 
             INotifierComponent envio = new Notifier();
 
-            INotifierComponent Mms = new MmsDecorator(envio);
+            INotifierComponent Mms = new MmsAdapter(envio);
             Message msg = new Message(phoneNumber, message);
             Mms.Send(msg);
 
-            // INotifierComponent Sms = new SmsDecorator(envio);
+            // INotifierComponent Sms = new SmsAdapter(envio);
             //Message msg = new Message(phoneNumber, message);
             // Sms.Send(msg);
 
-            // INotifierComponent zap = new WhatsappDecorator(envio);
+            // INotifierComponent zap = new WhatsappAdapter(envio);
             //Message msg = new Message(phoneNumber, message);
             // zap.Send(msg);
         }

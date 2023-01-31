@@ -4,11 +4,11 @@ using FluentValidation.Results;
 
 namespace Comunicacao.Messagem
 {
-    public class BaseDecorator : INotifierComponent
+    public class BaseAdapter : INotifierComponent
     {
         private readonly INotifierComponent _notifierComponent;
 
-        public BaseDecorator(INotifierComponent notifierComponent)
+        public BaseAdapter(INotifierComponent notifierComponent)
         {
             _notifierComponent = notifierComponent;
         }
