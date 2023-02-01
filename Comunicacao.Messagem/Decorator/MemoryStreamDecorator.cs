@@ -6,8 +6,6 @@ namespace Comunicacao.Messagem
 {
     public class MemoryStreamDecorator : ILogComponentDecorator
     {
-        protected List<dynamic> records = new List<dynamic>();
-
         public void WriteData(Message message)
         {
             Console.WriteLine("Writing the data memoryStream");

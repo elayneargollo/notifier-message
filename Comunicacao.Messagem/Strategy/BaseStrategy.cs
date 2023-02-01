@@ -23,11 +23,12 @@ namespace Comunicacao.Messagem
                 CustomerValidator validator = new CustomerValidator();
                 ValidationResult result = validator.Validate(message);
 
-                ILogComponentDecorator writFile = new MemoryStreamDecorator();
-                writFile.WriteData(message);
+                // Write types
+                ILogComponentDecorator writeFile = new MemoryStreamDecorator();
+                writeFile.WriteData(message);
 
-                // ILogComponentDecorator writFile = new FileDecorator();
-                // writFile.WriteData(message);
+                // ILogComponentDecorator writeFile = new FileDecorator();
+                // writeFile.WriteData(message);
 
                 _notifierComponent.Send(message);
 

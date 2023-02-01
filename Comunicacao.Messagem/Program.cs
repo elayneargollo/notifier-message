@@ -6,6 +6,7 @@ namespace Comunicacao.Messagem
     {
         static void Main(string[] args)
         {
+            // Display
             Console.WriteLine("Send an outgoing SMS with Twilio !");
             string phoneNumberExemple = "61976430594";
 
@@ -15,7 +16,13 @@ namespace Comunicacao.Messagem
             Console.WriteLine("Report the message: ");
             string message = Console.ReadLine();
 
+
+            // Type send
             INotifierComponent envio = new Notifier();
+
+            INotifierComponent zap = new WhatsappStrategy(envio);
+            Message msg = new Message(phoneNumber, message);
+            zap.Send(msg);
 
             // INotifierComponent Mms = new MmsStrategy(envio);
             // Message msg = new Message(phoneNumber, message);
@@ -24,10 +31,6 @@ namespace Comunicacao.Messagem
             // INotifierComponent Sms = new SmsStrategy(envio);
             // Message msg = new Message(phoneNumber, message);
             // Sms.Send(msg);
-
-            INotifierComponent zap = new WhatsappStrategy(envio);
-            Message msg = new Message(phoneNumber, message);
-            zap.Send(msg);
         }
     }
 }
