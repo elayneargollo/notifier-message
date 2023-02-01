@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "CsvHelper/15.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/CsvHelper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/CsvHelper.dll": {}
+        }
+      },
       "FluentValidation/11.4.0": {
         "type": "package",
         "compile": {
@@ -475,6 +487,26 @@
     }
   },
   "libraries": {
+    "CsvHelper/15.0.0": {
+      "sha512": "edCk/ugHNUlH9JGULveiujP3G8lQsbf8D8p9lpJYq9q9tY4iYlURiy3cBp+gP8KaLbfvgYoEo7AIy+d2Oi5Kdg==",
+      "type": "package",
+      "path": "csvhelper/15.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.15.0.0.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net45/CsvHelper.dll",
+        "lib/net45/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
+      ]
+    },
     "FluentValidation/11.4.0": {
       "sha512": "WZJyrNf4suiaI6avVG32W9kmBLC3+V5rDTcLeRJjeU4tDmTyDIOz1459DzCKppXs34YpZg9rCUzDY3M4XxG7Ug==",
       "type": "package",
@@ -2092,6 +2124,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "CsvHelper >= 15.0.0",
       "FluentValidation >= 11.4.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "System.Configuration.ConfigurationManager >= 7.0.0",
@@ -2136,6 +2169,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "CsvHelper": {
+            "target": "Package",
+            "version": "[15.0.0, )"
+          },
           "FluentValidation": {
             "target": "Package",
             "version": "[11.4.0, )"

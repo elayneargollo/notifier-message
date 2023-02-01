@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sgOr4OcEc4zi0rqRsjER8goppvkR4TnElUouJ4ugZHIVSoU4LytFC4ewsksjGBSzPD+8EUoLYMCmEDh4TwGcKw==",
+  "dgSpecHash": "Iwveyt8pOs0YRIz+l5SmLW2sIMmM1QjTbra1ijLmjDGcb4S5S9oyqTOqJaEX0pAFbSff3g0KNmFi6x8ImRHIhQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\elayne.argollo\\Documents\\notifier-message\\Comunicacao.Messagem\\Comunicacao.Messagem.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\elayne.argollo\\.nuget\\packages\\csvhelper\\15.0.0\\csvhelper.15.0.0.nupkg.sha512",
     "C:\\Users\\elayne.argollo\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\elayne.argollo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\elayne.argollo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",

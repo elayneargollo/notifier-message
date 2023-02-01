@@ -70,3 +70,4 @@ C:\Users\elayne.argollo\Documents\notifier-message\Comunicacao.Messagem\obj\Debu
 C:\Users\elayne.argollo\Documents\notifier-message\Comunicacao.Messagem\obj\Debug\netcoreapp3.1\Comunicacao.Messagem.dll
 C:\Users\elayne.argollo\Documents\notifier-message\Comunicacao.Messagem\obj\Debug\netcoreapp3.1\Comunicacao.Messagem.pdb
 C:\Users\elayne.argollo\Documents\notifier-message\Comunicacao.Messagem\obj\Debug\netcoreapp3.1\Comunicacao.Messagem.genruntimeconfig.cache
+C:\Users\elayne.argollo\Documents\notifier-message\Comunicacao.Messagem\bin\Debug\netcoreapp3.1\CsvHelper.dll

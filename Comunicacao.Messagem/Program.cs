@@ -18,15 +18,11 @@ namespace Comunicacao.Messagem
             INotifierComponent envio = new Notifier();
 
             // INotifierComponent Mms = new MmsStrategy(envio);
-            //Message msg = new Message(phoneNumber, message);
-            // Mms.Send(msg);
-
-            // INotifierComponent Mms = new MmsStrategy(envio);
-            //Message msg = new Message(phoneNumber, message);
+            // Message msg = new Message(phoneNumber, message);
             // Mms.Send(msg);
 
             // INotifierComponent Sms = new SmsStrategy(envio);
-            //Message msg = new Message(phoneNumber, message);
+            // Message msg = new Message(phoneNumber, message);
             // Sms.Send(msg);
 
             INotifierComponent zap = new WhatsappStrategy(envio);

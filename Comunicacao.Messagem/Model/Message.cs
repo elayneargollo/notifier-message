@@ -8,6 +8,8 @@ public class Message
     public string PhoneOrigin { set; get; }
     public List<Uri> MediaUrl { set; get; }
 
+    public Message() { }
+
     public Message(string phoneNumber, string messageSend, List<Uri> mediaUrl = null)
     {
         PhoneNumberDestiny = phoneNumber;
